@@ -12,7 +12,7 @@ Date.prototype.tz = function(timezone) {
   } else if (data !== undefined && data.constructor === Object) {
     for (var i in data) { 
       date = utc + (+i.split(':')[0] * 60 * 60 * 1000) + (((+i.split(':')[1]||0) * 60 * 1000) * (+i.split(':')[0] < 0 ? -1 : 1));
-      result.push(new Date(date).toISOString() + '(' + data[i] + ')');
+      result.push(new Date(date).toISOString() + '|(' + data[i] + ')');
     }
   }
 
