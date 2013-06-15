@@ -1,0 +1,540 @@
+var data_IANA = {
+  'Africa/Abidjan'                   :  '+00:00',
+  'Africa/Accra'                     :  '+00:00',
+  'Africa/Addis_Ababa'               :  '+03:00',
+  'Africa/Algiers'                   :  '+01:00',
+  'Africa/Asmara'                    :  '+03:00',
+  'Africa/Asmera'                    :  '+03:00', 
+  'Africa/Bamako'                    :  '+00:00',
+  'Africa/Bangui'                    :  '+01:00',
+  'Africa/Banjul'                    :  '+00:00',
+  'Africa/Bissau'                    :  '+00:00',
+  'Africa/Blantyre'                  :  '+02:00',
+  'Africa/Brazzaville'               :  '+01:00',
+  'Africa/Bujumbura'                 :  '+02:00',
+  'Africa/Cairo'                     :  '+02:00', // DST has been canceled since 2011
+  'Africa/Casablanca'                :  '+01:00',
+  'Africa/Ceuta'                     :  '+02:00', // Ceuta & Melilla
+  'Africa/Conakry'                   :  '+00:00',
+  'Africa/Dakar'                     :  '+00:00',
+  'Africa/Dar_es_Salaam'             :  '+03:00',
+  'Africa/Djibouti'                  :  '+03:00',
+  'Africa/Douala'                    :  '+01:00',
+  'Africa/El_Aaiun'                  :  '+00:00',
+  'Africa/Freetown'                  :  '+00:00',
+  'Africa/Gaborone'                  :  '+02:00',
+  'Africa/Harare'                    :  '+02:00',
+  'Africa/Johannesburg'              :  '+02:00',
+  'Africa/Juba'                      :  '+03:00',
+  'Africa/Kampala'                   :  '+03:00',
+  'Africa/Khartoum'                  :  '+03:00',
+  'Africa/Kigali'                    :  '+02:00',
+  'Africa/Kinshasa'                  :  '+01:00', // west Dem. Rep. of Congo
+  'Africa/Lagos'                     :  '+01:00',
+  'Africa/Libreville'                :  '+01:00',
+  'Africa/Lome'                      :  '+00:00',
+  'Africa/Luanda'                    :  '+01:00',
+  'Africa/Lubumbashi'                :  '+02:00', // east Dem. Rep. of Congo
+  'Africa/Lusaka'                    :  '+02:00',
+  'Africa/Malabo'                    :  '+01:00',
+  'Africa/Maputo'                    :  '+02:00',
+  'Africa/Maseru'                    :  '+02:00',
+  'Africa/Mbabane'                   :  '+02:00',
+  'Africa/Mogadishu'                 :  '+03:00',
+  'Africa/Monrovia'                  :  '+00:00',
+  'Africa/Nairobi'                   :  '+03:00',
+  'Africa/Ndjamena'                  :  '+01:00',
+  'Africa/Niamey'                    :  '+01:00',
+  'Africa/Nouakchott'                :  '+00:00',
+  'Africa/Ouagadougou'               :  '+00:00',
+  'Africa/Porto-Novo'                :  '+01:00',
+  'Africa/Sao_Tome'                  :  '+00:00',
+  'Africa/Timbuktu'                  :  '+00:00', 
+  'Africa/Tripoli'                   :  '+02:00',
+  'Africa/Tunis'                     :  '+01:00',
+  'Africa/Windhoek'                  :  '+02:00',
+  'AKST9AKDT'                        :  '−08:00', 
+  'America/Adak'                     :  '−09:00', // Aleutian Islands
+  'America/Anchorage'                :  '−08:00', // Alaska Time
+  'America/Anguilla'                 :  '−04:00',
+  'America/Antigua'                  :  '−04:00',
+  'America/Araguaina'                :  '−03:00', // Tocantins
+  'America/Argentina/Buenos_Aires'   :  '−03:00', // Buenos Aires (BA, CF)
+  'America/Argentina/Catamarca'      :  '−03:00', // Catamarca (CT), Chubut (CH)
+  'America/Argentina/ComodRivadavia' :  '−03:00', 
+  'America/Argentina/Cordoba'        :  '−03:00', // most locations (CB, CC, CN, ER, FM, MN, SE, SF)
+  'America/Argentina/Jujuy'          :  '−03:00', // Jujuy (JY)
+  'America/Argentina/La_Rioja'       :  '−03:00', // La Rioja (LR)
+  'America/Argentina/Mendoza'        :  '−03:00', // Mendoza (MZ)
+  'America/Argentina/Rio_Gallegos'   :  '−03:00', // Santa Cruz (SC)
+  'America/Argentina/Salta'          :  '−03:00', // (SA, LP, NQ, RN)
+  'America/Argentina/San_Juan'       :  '−03:00', // San Juan (SJ)
+  'America/Argentina/San_Luis'       :  '−03:00', // San Luis (SL)
+  'America/Argentina/Tucuman'        :  '−03:00', // Tucuman (TM)
+  'America/Argentina/Ushuaia'        :  '−03:00', // Tierra del Fuego (TF)
+  'America/Aruba'                    :  '−04:00',
+  'America/Asuncion'                 :  '−03:00',
+  'America/Atikokan'                 :  '−05:00', // Eastern Standard Time - Atikokan, Ontario and Southampton I, Nunavut
+  'America/Atka'                     :  '−09:00', 
+  'America/Bahia'                    :  '−03:00', // Bahia
+  'America/Bahia_Banderas'           :  '−05:00', // Mexican Central Time - Bahia de Banderas
+  'America/Barbados'                 :  '−04:00',
+  'America/Belem'                    :  '−03:00', // Amapa, E Para
+  'America/Belize'                   :  '−06:00',
+  'America/Blanc-Sablon'             :  '−04:00', // Atlantic Standard Time - Quebec - Lower North Shore
+  'America/Boa_Vista'                :  '−04:00', // Roraima
+  'America/Bogota'                   :  '−05:00',
+  'America/Boise'                    :  '−06:00', // Mountain Time - south Idaho & east Oregon
+  'America/Buenos_Aires'             :  '−03:00', 
+  'America/Cambridge_Bay'            :  '−06:00', // Mountain Time - west Nunavut
+  'America/Campo_Grande'             :  '−03:00', // Mato Grosso do Sul
+  'America/Cancun'                   :  '−05:00', // Central Time - Quintana Roo
+  'America/Caracas'                  :  '−04:30',
+  'America/Catamarca'                :  '−03:00', 
+  'America/Cayenne'                  :  '−03:00',
+  'America/Cayman'                   :  '−05:00',
+  'America/Chicago'                  :  '−05:00', // Central Time
+  'America/Chihuahua'                :  '−06:00', // Mexican Mountain Time - Chihuahua away from US border
+  'America/Coral_Harbour'            :  '−05:00', 
+  'America/Cordoba'                  :  '−03:00', 
+  'America/Costa_Rica'               :  '−06:00',
+  'America/Creston'                  :  '−07:00', // Mountain Standard Time - Creston, British Columbia
+  'America/Cuiaba'                   :  '−03:00', // Mato Grosso
+  'America/Curacao'                  :  '−04:00',
+  'America/Danmarkshavn'             :  '+00:00', // east coast, north of Scoresbysund
+  'America/Dawson'                   :  '−07:00', // Pacific Time - north Yukon
+  'America/Dawson_Creek'             :  '−07:00', // Mountain Standard Time - Dawson Creek & Fort Saint John, British Columbia
+  'America/Denver'                   :  '−06:00', // Mountain Time
+  'America/Detroit'                  :  '−04:00', // Eastern Time - Michigan - most locations
+  'America/Dominica'                 :  '−04:00',
+  'America/Edmonton'                 :  '−06:00', // Mountain Time - Alberta, east British Columbia & west Saskatchewan
+  'America/Eirunepe'                 :  '−04:00', // W Amazonas
+  'America/El_Salvador'              :  '−06:00',
+  'America/Ensenada'                 :  '−07:00', 
+  'America/Fort_Wayne'               :  '−04:00', 
+  'America/Fortaleza'                :  '−03:00', // NE Brazil (MA, PI, CE, RN, PB)
+  'America/Glace_Bay'                :  '−03:00', // Atlantic Time - Nova Scotia - places that did not observe DST 1966-1971
+  'America/Godthab'                  :  '−02:00', // most locations
+  'America/Goose_Bay'                :  '−03:00', // Atlantic Time - Labrador - most locations
+  'America/Grand_Turk'               :  '−04:00',
+  'America/Grenada'                  :  '−04:00',
+  'America/Guadeloupe'               :  '−04:00',
+  'America/Guatemala'                :  '−06:00',
+  'America/Guayaquil'                :  '−05:00', // mainland
+  'America/Guyana'                   :  '−04:00',
+  'America/Halifax'                  :  '−03:00', // Atlantic Time - Nova Scotia (most places), PEI
+  'America/Havana'                   :  '−04:00',
+  'America/Hermosillo'               :  '−07:00', // Mountain Standard Time - Sonora
+  'America/Indiana/Indianapolis'     :  '−04:00', // Eastern Time - Indiana - most locations
+  'America/Indiana/Knox'             :  '−05:00', // Central Time - Indiana - Starke County
+  'America/Indiana/Marengo'          :  '−04:00', // Eastern Time - Indiana - Crawford County
+  'America/Indiana/Petersburg'       :  '−04:00', // Eastern Time - Indiana - Pike County
+  'America/Indiana/Tell_City'        :  '−05:00', // Central Time - Indiana - Perry County
+  'America/Indiana/Vevay'            :  '−04:00', // Eastern Time - Indiana - Switzerland County
+  'America/Indiana/Vincennes'        :  '−04:00', // Eastern Time - Indiana - Daviess, Dubois, Knox & Martin Counties
+  'America/Indiana/Winamac'          :  '−04:00', // Eastern Time - Indiana - Pulaski County
+  'America/Indianapolis'             :  '−04:00', 
+  'America/Inuvik'                   :  '−06:00', // Mountain Time - west Northwest Territories
+  'America/Iqaluit'                  :  '−04:00', // Eastern Time - east Nunavut - most locations
+  'America/Jamaica'                  :  '−05:00',
+  'America/Jujuy'                    :  '−03:00', 
+  'America/Juneau'                   :  '−08:00', // Alaska Time - Alaska panhandle
+  'America/Kentucky/Louisville'      :  '−04:00', // Eastern Time - Kentucky - Louisville area
+  'America/Kentucky/Monticello'      :  '−04:00', // Eastern Time - Kentucky - Wayne County
+  'America/Knox_IN'                  :  '−05:00', 
+  'America/Kralendijk'               :  '−04:00', 
+  'America/La_Paz'                   :  '−04:00',
+  'America/Lima'                     :  '−05:00',
+  'America/Los_Angeles'              :  '−07:00', // Pacific Time
+  'America/Louisville'               :  '−04:00', 
+  'America/Lower_Princes'            :  '−04:00', 
+  'America/Maceio'                   :  '−03:00', // Alagoas, Sergipe
+  'America/Managua'                  :  '−06:00',
+  'America/Manaus'                   :  '−04:00', // E Amazonas
+  'America/Marigot'                  :  '−04:00', 
+  'America/Martinique'               :  '−04:00',
+  'America/Matamoros'                :  '−05:00', // US Central Time - Coahuila, Durango, Nuevo León, Tamaulipas near US border    
+  'America/Mazatlan'                 :  '−06:00', // Mountain Time - S Baja, Nayarit, Sinaloa
+  'America/Mendoza'                  :  '−03:00', 
+  'America/Menominee'                :  '−05:00', // Central Time - Michigan - Dickinson, Gogebic, Iron & Menominee Counties
+  'America/Merida'                   :  '−05:00', // Central Time - Campeche, Yucatán    
+  'America/Metlakatla'               :  '−08:00', // Metlakatla Time - Annette Island
+  'America/Mexico_City'              :  '−05:00', // Central Time - most locations
+  'America/Miquelon'                 :  '−02:00',
+  'America/Moncton'                  :  '−03:00', // Atlantic Time - New Brunswick
+  'America/Monterrey'                :  '−05:00', // Mexican Central Time - Coahuila, Durango, Nuevo León, Tamaulipas away from US border
+  'America/Montevideo'               :  '−02:00',
+  'America/Montreal'                 :  '−04:00', // Eastern Time - Quebec - most locations
+  'America/Montserrat'               :  '−04:00',
+  'America/Nassau'                   :  '−04:00',
+  'America/New_York'                 :  '−04:00', // Eastern Time
+  'America/Nipigon'                  :  '−04:00', // Eastern Time - Ontario & Quebec - places that did not observe DST 1967-1973
+  'America/Nome'                     :  '−08:00', // Alaska Time - west Alaska
+  'America/Noronha'                  :  '−02:00', // Atlantic islands
+  'America/North_Dakota/Beulah'      :  '−05:00', // Central Time - North Dakota - Mercer County
+  'America/North_Dakota/Center'      :  '−05:00', // Central Time - North Dakota - Oliver County
+  'America/North_Dakota/New_Salem'   :  '−05:00', // Central Time - North Dakota - Morton County (except Mandan area)
+  'America/Ojinaga'                  :  '−06:00', // US Mountain Time - Chihuahua near US border
+  'America/Panama'                   :  '−05:00',
+  'America/Pangnirtung'              :  '−04:00', // Eastern Time - Pangnirtung, Nunavut
+  'America/Paramaribo'               :  '−03:00',
+  'America/Phoenix'                  :  '−07:00', // Mountain Standard Time - Arizona
+  'America/Port_of_Spain'            :  '−04:00',
+  'America/Port-au-Prince'           :  '−04:00',
+  'America/Porto_Acre'               :  '−04:00', 
+  'America/Porto_Velho'              :  '−04:00', // Rondonia
+  'America/Puerto_Rico'              :  '−04:00',
+  'America/Rainy_River'              :  '−05:00', // Central Time - Rainy River & Fort Frances, Ontario
+  'America/Rankin_Inlet'             :  '−05:00', // Central Time - central Nunavut
+  'America/Recife'                   :  '−03:00', // Pernambuco
+  'America/Regina'                   :  '−06:00', // Central Standard Time - Saskatchewan - most locations
+  'America/Resolute'                 :  '−05:00', // Central Standard Time - Resolute, Nunavut
+  'America/Rio_Branco'               :  '−04:00', // Acre
+  'America/Rosario'                  :  '−03:00', 
+  'America/Santa_Isabel'             :  '−07:00', // Mexican Pacific Time - Baja California away from US border
+  'America/Santarem'                 :  '−03:00', // W Para
+  'America/Santiago'                 :  '−03:00', // most locations
+  'America/Santo_Domingo'            :  '−04:00',
+  'America/Sao_Paulo'                :  '−02:00', // S & SE Brazil (GO, DF, MG, ES, RJ, SP, PR, SC, RS)
+  'America/Scoresbysund'             :  '+00:00', // Scoresbysund / Ittoqqortoormiit
+  'America/Shiprock'                 :  '−06:00', // Mountain Time - Navajo  
+  'America/Sitka'                    :  '−08:00', // Alaska Time - southeast Alaska panhandle
+  'America/St_Barthelemy'            :  '−04:00', 
+  'America/St_Johns'                 :  '−02:30', // Newfoundland Time, including SE Labrador
+  'America/St_Kitts'                 :  '−04:00',
+  'America/St_Lucia'                 :  '−04:00',
+  'America/St_Thomas'                :  '−04:00',
+  'America/St_Vincent'               :  '−04:00',
+  'America/Swift_Current'            :  '−06:00', // Central Standard Time - Saskatchewan - midwest
+  'America/Tegucigalpa'              :  '−06:00',
+  'America/Thule'                    :  '−03:00', // Thule / Pituffik
+  'America/Thunder_Bay'              :  '−04:00', // Eastern Time - Thunder Bay, Ontario
+  'America/Tijuana'                  :  '−07:00', // US Pacific Time - Baja California near US border
+  'America/Toronto'                  :  '−04:00', // Eastern Time - Ontario - most locations
+  'America/Tortola'                  :  '−04:00',
+  'America/Vancouver'                :  '−07:00', // Pacific Time - west British Columbia
+  'America/Virgin'                   :  '−04:00', 
+  'America/Whitehorse'               :  '−07:00', // Pacific Time - south Yukon
+  'America/Winnipeg'                 :  '−05:00', // Central Time - Manitoba & west Ontario
+  'America/Yakutat'                  :  '−08:00', // Alaska Time - Alaska panhandle neck
+  'America/Yellowknife'              :  '−06:00', // Mountain Time - central Northwest Territories
+  'Antarctica/Casey'                 :  '+08:00', // Casey Station, Bailey Peninsula
+  'Antarctica/Davis'                 :  '+07:00', // Davis Station, Vestfold Hills
+  'Antarctica/DumontDUrville'        :  '+10:00', // Dumont-d'Urville Station, Terre Adelie
+  'Antarctica/Macquarie'             :  '+11:00', // Macquarie Island Station, Macquarie Island
+  'Antarctica/Mawson'                :  '+05:00', // Mawson Station, Holme Bay
+  'Antarctica/McMurdo'               :  '+13:00', // McMurdo Station, Ross Island
+  'Antarctica/Palmer'                :  '−03:00', // Palmer Station, Anvers Island
+  'Antarctica/Rothera'               :  '−03:00', // Rothera Station, Adelaide Island
+  'Antarctica/South_Pole'            :  '+13:00', // Amundsen-Scott Station, South Pole  
+  'Antarctica/Syowa'                 :  '+03:00', //   Syowa Station, E Ongul I
+  'Antarctica/Vostok'                :  '+06:00', // Vostok Station, Lake Vostok
+  'Arctic/Longyearbyen'              :  '+02:00',  
+  'Asia/Aden'                        :  '+03:00',
+  'Asia/Almaty'                      :  '+06:00', // most locations
+  'Asia/Amman'                       :  '+03:00',
+  'Asia/Anadyr'                      :  '+12:00', // Moscow+08 - Bering Sea
+  'Asia/Aqtau'                       :  '+05:00', // Atyrau (Atirau, Gur'yev), Mangghystau (Mankistau)
+  'Asia/Aqtobe'                      :  '+05:00', // Aqtobe (Aktobe)
+  'Asia/Ashgabat'                    :  '+05:00',
+  'Asia/Ashkhabad'                   :  '+05:00',  
+  'Asia/Baghdad'                     :  '+03:00',
+  'Asia/Bahrain'                     :  '+03:00',
+  'Asia/Baku'                        :  '+05:00',
+  'Asia/Bangkok'                     :  '+07:00',
+  'Asia/Beirut'                      :  '+03:00',
+  'Asia/Bishkek'                     :  '+06:00',
+  'Asia/Brunei'                      :  '+08:00',
+  'Asia/Calcutta'                    :  '+05:30',  
+  'Asia/Choibalsan'                  :  '+08:00', // Dornod, Sukhbaatar
+  'Asia/Chongqing'                   :  '+08:00', // central China - Sichuan, Yunnan, Guangxi, Shaanxi, Guizhou, etc.  Covering historic Kansu-Szechuan time zone.
+  'Asia/Chungking'                   :  '+08:00',  
+  'Asia/Colombo'                     :  '+05:30',
+  'Asia/Dacca'                       :  '+06:00',  
+  'Asia/Damascus'                    :  '+03:00',
+  'Asia/Dhaka'                       :  '+06:00',
+  'Asia/Dili'                        :  '+09:00',
+  'Asia/Dubai'                       :  '+04:00',
+  'Asia/Dushanbe'                    :  '+05:00',
+  'Asia/Gaza'                        :  '+03:00', // Gaza Strip
+  'Asia/Harbin'                      :  '+08:00', // Heilongjiang (except Mohe), Jilin   Covering historic Changpai time zone.
+  'Asia/Hebron'                      :  '+03:00', // West Bank
+  'Asia/Ho_Chi_Minh'                 :  '+07:00',
+  'Asia/Hong_Kong'                   :  '+08:00',
+  'Asia/Hovd'                        :  '+07:00', // Bayan-Olgiy, Govi-Altai, Hovd, Uvs, Zavkhan
+  'Asia/Irkutsk'                     :  '+09:00', // Moscow+05 - Lake Baikal
+  'Asia/Istanbul'                    :  '+03:00',  
+  'Asia/Jakarta'                     :  '+07:00', // Java & Sumatra
+  'Asia/Jayapura'                    :  '+09:00', // west New Guinea (Irian Jaya) & Malukus (Moluccas)
+  'Asia/Jerusalem'                   :  '+03:00',
+  'Asia/Kabul'                       :  '+04:30',
+  'Asia/Kamchatka'                   :  '+12:00', // Moscow+08 - Kamchatka
+  'Asia/Karachi'                     :  '+05:00',
+  'Asia/Kashgar'                     :  '+08:00', // west Tibet & Xinjiang   Covering historic Kunlun time zone.
+  'Asia/Kathmandu'                   :  '+05:45',
+  'Asia/Katmandu'                    :  '+05:45',  
+  'Asia/Kolkata'                     :  '+05:30', // Note                                                                                                          :  Different zones in history, see Time in India.
+  'Asia/Krasnoyarsk'                 :  '+08:00', // Moscow+04 - Yenisei River
+  'Asia/Kuala_Lumpur'                :  '+08:00', // peninsular Malaysia
+  'Asia/Kuching'                     :  '+08:00', // Sabah & Sarawak
+  'Asia/Kuwait'                      :  '+03:00',
+  'Asia/Macao'                       :  '+08:00',  
+  'Asia/Macau'                       :  '+08:00',
+  'Asia/Magadan'                     :  '+12:00', // Moscow+08 - Magadan
+  'Asia/Makassar'                    :  '+08:00', // east & south Borneo, Sulawesi (Celebes), Bali, Nusa Tenggara, west Timor
+  'Asia/Manila'                      :  '+08:00',
+  'Asia/Muscat'                      :  '+04:00',
+  'Asia/Nicosia'                     :  '+03:00',
+  'Asia/Novokuznetsk'                :  '+07:00', // Moscow+03 - Novokuznetsk
+  'Asia/Novosibirsk'                 :  '+07:00', // Moscow+03 - Novosibirsk
+  'Asia/Omsk'                        :  '+07:00', // Moscow+03 - west Siberia
+  'Asia/Oral'                        :  '+05:00', // West Kazakhstan
+  'Asia/Phnom_Penh'                  :  '+07:00',
+  'Asia/Pontianak'                   :  '+07:00', // west & central Borneo
+  'Asia/Pyongyang'                   :  '+09:00',
+  'Asia/Qatar'                       :  '+03:00',
+  'Asia/Qyzylorda'                   :  '+06:00', // Qyzylorda (Kyzylorda, Kzyl-Orda)
+  'Asia/Rangoon'                     :  '+06:30',
+  'Asia/Riyadh'                      :  '+03:00',
+  'Asia/Saigon'                      :  '+07:00',  
+  'Asia/Sakhalin'                    :  '+11:00', // Moscow+07 - Sakhalin Island
+  'Asia/Samarkand'                   :  '+05:00', // west Uzbekistan
+  'Asia/Seoul'                       :  '+09:00',
+  'Asia/Shanghai'                    :  '+08:00', // east China - Beijing, Guangdong, Shanghai, etc.   Covering historic Chungyuan time zone.
+  'Asia/Singapore'                   :  '+08:00',
+  'Asia/Taipei'                      :  '+08:00',
+  'Asia/Tashkent'                    :  '+05:00', // east Uzbekistan
+  'Asia/Tbilisi'                     :  '+04:00',
+  'Asia/Tehran'                      :  '+04:30',
+  'Asia/Tel_Aviv'                    :  '+03:00',  
+  'Asia/Thimbu'                      :  '+06:00',  
+  'Asia/Thimphu'                     :  '+06:00',
+  'Asia/Tokyo'                       :  '+09:00',
+  'Asia/Ujung_Pandang'               :  '+08:00',  
+  'Asia/Ulaanbaatar'                 :  '+08:00', // most locations
+  'Asia/Ulan_Bator'                  :  '+08:00', 
+  'Asia/Urumqi'                      :  '+08:00', // most of Tibet & Xinjiang  Covering historic Sinkiang-Tibet time zone.
+  'Asia/Vientiane'                   :  '+07:00',
+  'Asia/Vladivostok'                 :  '+11:00', // Moscow+07 - Amur River
+  'Asia/Yakutsk'                     :  '+10:00', // Moscow+06 - Lena River
+  'Asia/Yekaterinburg'               :  '+06:00', // Moscow+02 - Urals
+  'Asia/Yerevan'                     :  '+04:00',
+  'Atlantic/Azores'                  :  '+00:00', // Azores
+  'Atlantic/Bermuda'                 :  '−03:00',
+  'Atlantic/Canary'                  :  '+01:00', // Canary Islands
+  'Atlantic/Cape_Verde'              :  '−01:00',
+  'Atlantic/Faeroe'                  :  '+01:00', 
+  'Atlantic/Faroe'                   :  '+01:00',
+  'Atlantic/Jan_Mayen'               :  '+02:00', 
+  'Atlantic/Madeira'                 :  '+01:00', // Madeira Islands
+  'Atlantic/Reykjavik'               :  '+00:00',
+  'Atlantic/South_Georgia'           :  '−02:00',
+  'Atlantic/St_Helena'               :  '+00:00',
+  'Atlantic/Stanley'                 :  '−03:00',
+  'Australia/ACT'                    :  '+11:00',  
+  'Australia/Adelaide'               :  '+10:30', // South Australia
+  'Australia/Brisbane'               :  '+10:00', // Queensland - most locations
+  'Australia/Broken_Hill'            :  '+10:30', // New South Wales - Yancowinna
+  'Australia/Canberra'               :  '+11:00',  
+  'Australia/Currie'                 :  '+11:00', // Tasmania - King Island
+  'Australia/Darwin'                 :  '+09:30', // Northern Territory
+  'Australia/Eucla'                  :  '+08:45', // Western Australia - Eucla area
+  'Australia/Hobart'                 :  '+11:00', // Tasmania - most locations
+  'Australia/LHI'                    :  '+11:00',  
+  'Australia/Lindeman'               :  '+10:00', // Queensland - Holiday Islands
+  'Australia/Lord_Howe'              :  '+11:00', // Lord Howe Island
+  'Australia/Melbourne'              :  '+11:00', // Victoria
+  'Australia/North'                  :  '+09:30',  
+  'Australia/NSW'                    :  '+11:00',  
+  'Australia/Perth'                  :  '+08:00', // Western Australia - most locations
+  'Australia/Queensland'             :  '+10:00',  
+  'Australia/South'                  :  '+10:30',  
+  'Australia/Sydney'                 :  '+11:00', // New South Wales - most locations
+  'Australia/Tasmania'               :  '+11:00',  
+  'Australia/Victoria'               :  '+11:00',  
+  'Australia/West'                   :  '+08:00',  
+  'Australia/Yancowinna'             :  '+10:30',  
+  'Brazil/Acre'                      :  '−04:00', 
+  'Brazil/DeNoronha'                 :  '−02:00', 
+  'Brazil/East'                      :  '−02:00', 
+  'Brazil/West'                      :  '−04:00', 
+  'Canada/Atlantic'                  :  '−03:00', 
+  'Canada/Central'                   :  '−05:00', 
+  'Canada/Eastern'                   :  '−04:00', 
+  'Canada/East-Saskatchewan'         :  '−06:00', 
+  'Canada/Mountain'                  :  '−06:00', 
+  'Canada/Newfoundland'              :  '−02:30', 
+  'Canada/Pacific'                   :  '−07:00', 
+  'Canada/Saskatchewan'              :  '−06:00', 
+  'Canada/Yukon'                     :  '−07:00', 
+  'CET'                              :  '+02:00',
+  'Chile/Continental'                :  '−03:00', 
+  'Chile/EasterIsland'               :  '−05:00', 
+  'CST6CDT'                          :  '−05:00',
+  'Cuba'                             :  '−04:00', 
+  'EET'                              :  '+03:00',
+  'Egypt'                            :  '+02:00',  
+  'Eire'                             :  '+01:00',  
+  'EST'                              :  '−05:00',
+  'EST5EDT'                          :  '−04:00',
+  'Europe/Amsterdam'                 :  '+02:00',
+  'Europe/Andorra'                   :  '+02:00',
+  'Europe/Athens'                    :  '+03:00',
+  'Europe/Belfast'                   :  '+01:00',  
+  'Europe/Belgrade'                  :  '+02:00',
+  'Europe/Berlin'                    :  '+02:00', // In 1945, the Trizone did not follow Berlin\'s switch to DST, see Time in Germany
+  'Europe/Bratislava'                :  '+02:00',  
+  'Europe/Brussels'                  :  '+02:00',
+  'Europe/Bucharest'                 :  '+03:00',
+  'Europe/Budapest'                  :  '+02:00',
+  'Europe/Chisinau'                  :  '+03:00',
+  'Europe/Copenhagen'                :  '+02:00',
+  'Europe/Dublin'                    :  '+01:00',
+  'Europe/Gibraltar'                 :  '+02:00',
+  'Europe/Guernsey'                  :  '+01:00',  
+  'Europe/Helsinki'                  :  '+03:00',
+  'Europe/Isle_of_Man'               :  '+01:00',  
+  'Europe/Istanbul'                  :  '+03:00',
+  'Europe/Jersey'                    :  '+01:00',  
+  'Europe/Kaliningrad'               :  '+03:00', // Moscow-01 - Kaliningrad
+  'Europe/Kiev'                      :  '+03:00', // most locations
+  'Europe/Lisbon'                    :  '+01:00', // mainland
+  'Europe/Ljubljana'                 :  '+02:00',  
+  'Europe/London'                    :  '+01:00',
+  'Europe/Luxembourg'                :  '+02:00',
+  'Europe/Madrid'                    :  '+02:00', // mainland
+  'Europe/Malta'                     :  '+02:00',
+  'Europe/Mariehamn'                 :  '+03:00',  
+  'Europe/Minsk'                     :  '+03:00',
+  'Europe/Monaco'                    :  '+02:00',
+  'Europe/Moscow'                    :  '+04:00', // Moscow+00 - west Russia
+  'Europe/Nicosia'                   :  '+03:00',  
+  'Europe/Oslo'                      :  '+02:00',
+  'Europe/Paris'                     :  '+02:00',
+  'Europe/Podgorica'                 :  '+02:00',  
+  'Europe/Prague'                    :  '+02:00',
+  'Europe/Riga'                      :  '+03:00',
+  'Europe/Rome'                      :  '+02:00',
+  'Europe/Samara'                    :  '+04:00', // Moscow+00 - Samara, Udmurtia
+  'Europe/San_Marino'                :  '+02:00',  
+  'Europe/Sarajevo'                  :  '+02:00',  
+  'Europe/Simferopol'                :  '+03:00', // central Crimea
+  'Europe/Skopje'                    :  '+02:00',  
+  'Europe/Sofia'                     :  '+03:00',
+  'Europe/Stockholm'                 :  '+02:00',
+  'Europe/Tallinn'                   :  '+03:00',
+  'Europe/Tirane'                    :  '+02:00',
+  'Europe/Tiraspol'                  :  '+03:00',  
+  'Europe/Uzhgorod'                  :  '+03:00', // Ruthenia
+  'Europe/Vaduz'                     :  '+02:00',
+  'Europe/Vatican'                   :  '+02:00',  
+  'Europe/Vienna'                    :  '+02:00',
+  'Europe/Vilnius'                   :  '+03:00',
+  'Europe/Volgograd'                 :  '+04:00', // Moscow+00 - Caspian Sea
+  'Europe/Warsaw'                    :  '+02:00',
+  'Europe/Zagreb'                    :  '+02:00',  
+  'Europe/Zaporozhye'                :  '+03:00', // Zaporozh'ye, E Lugansk / Zaporizhia, E Luhansk
+  'Europe/Zurich'                    :  '+02:00',
+  'GB'                               :  '+01:00',  
+  'GB-Eire'                          :  '+01:00',  
+  'Greenwich'                        :  '+00:00',  
+  'Hong Kong'                        :  '+08:00',  
+  'HST'                              :  '−10:00',
+  'Iceland'                          :  '+00:00',  
+  'Indian/Antananarivo'              :  '+03:00',
+  'Indian/Chagos'                    :  '+06:00',
+  'Indian/Christmas'                 :  '+07:00',
+  'Indian/Cocos'                     :  '+06:30',
+  'Indian/Comoro'                    :  '+03:00',
+  'Indian/Kerguelen'                 :  '+05:00',
+  'Indian/Mahe'                      :  '+04:00',
+  'Indian/Maldives'                  :  '+05:00',
+  'Indian/Mauritius'                 :  '+04:00',
+  'Indian/Mayotte'                   :  '+03:00',
+  'Indian/Reunion'                   :  '+04:00',
+  'Iran'                             :  '+04:30',  
+  'Israel'                           :  '+03:00',  
+  'Jamaica'                          :  '−05:00', 
+  'Japan'                            :  '+09:00',  
+  'JST-9'                            :  '+09:00',  
+  'Kwajalein'                        :  '+12:00',  
+  'Libya'                            :  '+02:00',  
+  'MET'                              :  '+02:00',
+  'Mexico/BajaNorte'                 :  '−07:00', 
+  'Mexico/BajaSur'                   :  '−06:00', 
+  'Mexico/General'                   :  '−05:00', 
+  'MST'                              :  '−07:00',
+  'MST7MDT'                          :  '−06:00',
+  'Navajo'                           :  '−06:00', 
+  'NZ'                               :  '+13:00',  
+  'NZ-CHAT'                          :  '+13:45',  
+  'Pacific/Apia'                     :  '+14:00',
+  'Pacific/Auckland'                 :  '+13:00', // most locations
+  'Pacific/Chatham'                  :  '+13:45', // Chatham Islands
+  'Pacific/Chuuk'                    :  '+10:00', // Chuuk (Truk) and Yap
+  'Pacific/Easter'                   :  '−05:00', // Easter Island & Sala y Gomez
+  'Pacific/Efate'                    :  '+11:00',
+  'Pacific/Enderbury'                :  '+13:00', // Phoenix Islands
+  'Pacific/Fakaofo'                  :  '+13:00',
+  'Pacific/Fiji'                     :  '+13:00',
+  'Pacific/Funafuti'                 :  '+12:00',
+  'Pacific/Galapagos'                :  '−06:00', // Galapagos Islands
+  'Pacific/Gambier'                  :  '−09:00', // Gambier Islands
+  'Pacific/Guadalcanal'              :  '+11:00',
+  'Pacific/Guam'                     :  '+10:00',
+  'Pacific/Honolulu'                 :  '−10:00', // Hawaii
+  'Pacific/Johnston'                 :  '−10:00', // Johnston Atoll
+  'Pacific/Kiritimati'               :  '+14:00', // Line Islands
+  'Pacific/Kosrae'                   :  '+11:00', // Kosrae
+  'Pacific/Kwajalein'                :  '+12:00', // Kwajalein
+  'Pacific/Majuro'                   :  '+12:00', // most locations
+  'Pacific/Marquesas'                :  '−09:30', // Marquesas Islands
+  'Pacific/Midway'                   :  '−11:00', // Midway Islands
+  'Pacific/Nauru'                    :  '+12:00',
+  'Pacific/Niue'                     :  '−11:00',
+  'Pacific/Norfolk'                  :  '+11:30',
+  'Pacific/Noumea'                   :  '+11:00',
+  'Pacific/Pago_Pago'                :  '−11:00',
+  'Pacific/Palau'                    :  '+09:00',
+  'Pacific/Pitcairn'                 :  '−08:00',
+  'Pacific/Pohnpei'                  :  '+11:00', // Pohnpei (Ponape)
+  'Pacific/Ponape'                   :  '+11:00',  
+  'Pacific/Port_Moresby'             :  '+10:00',
+  'Pacific/Rarotonga'                :  '−10:00',
+  'Pacific/Saipan'                   :  '+10:00',
+  'Pacific/Samoa'                    :  '−11:00', 
+  'Pacific/Tahiti'                   :  '−10:00', // Society Islands
+  'Pacific/Tarawa'                   :  '+12:00', // Gilbert Islands
+  'Pacific/Tongatapu'                :  '+13:00',
+  'Pacific/Truk'                     :  '+10:00',  
+  'Pacific/Wake'                     :  '+12:00', // Wake Island
+  'Pacific/Wallis'                   :  '+12:00',
+  'Pacific/Yap'                      :  '+10:00',  
+  'Poland'                           :  '+02:00',  
+  'Portugal'                         :  '+01:00',  
+  'PRC'                              :  '+08:00',  
+  'PST8PDT'                          :  '−07:00',
+  'ROC'                              :  '+08:00',  
+  'ROK'                              :  '+09:00',  
+  'Singapore'                        :  '+08:00',  
+  'Turkey'                           :  '+03:00',  
+  'UCT'                              :  '+00:00',  
+  'Universal'                        :  '+00:00',  
+  'US/Alaska'                        :  '−08:00', 
+  'US/Aleutian'                      :  '−09:00', 
+  'US/Arizona'                       :  '−07:00', 
+  'US/Central'                       :  '−05:00', 
+  'US/Eastern'                       :  '−04:00', 
+  'US/East-Indiana'                  :  '−04:00', 
+  'US/Hawaii'                        :  '−10:00', 
+  'US/Indiana-Starke'                :  '−05:00', 
+  'US/Michigan'                      :  '−04:00', 
+  'US/Mountain'                      :  '−06:00', 
+  'US/Pacific'                       :  '−07:00', 
+  'US/Pacific-New'                   :  '−07:00', 
+  'US/Samoa'                         :  '−11:00', 
+  'UTC'                              :  '+00:00',
+  'WET'                              :  '+01:00',
+  'W-SU'                             :  '+04:00',  
+  'Zulu'                             :  '+00:00'  
+};

@@ -1,0 +1,16 @@
+{
+  "name": "timezone",
+  "version": "0.0.1",
+  "main": "timezone.js",
+  "dependencies": {
+    "grunt": "*",
+    "grunt-contrib-concat": "*",
+    "grunt-contrib-watch": "*",
+    "grunt-contrib-uglify": "*",
+    "grunt-contrib-jshint": "*",
+    "grunt-contrib-qunit": "*"
+  },
+  "repository": "",
+  "author": "Ephemera",
+  "license": "BSD"
+}
