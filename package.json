@@ -10,6 +10,9 @@
     "grunt-contrib-jshint": "*",
     "grunt-contrib-qunit": "*"
   },
+  "scripts": {
+    "test": "grunt test"
+  },
   "repository": "",
   "author": "Ephemera",
   "license": "BSD"
