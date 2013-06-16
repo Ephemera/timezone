@@ -11,7 +11,7 @@
     "grunt-contrib-qunit": "*"
   },
   "scripts": {
-    "test": "grunt test"
+    "test": "grunt test --verbose"
   },
   "repository": "",
   "author": "Ephemera",
