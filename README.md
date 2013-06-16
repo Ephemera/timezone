@@ -11,7 +11,7 @@ Convert date to another timezone in javascript
     
     date.tz('america/los_angeles') // ["2013-06-05T05:00:00.123Z"]
 
-    date.tz('EST') // ["2013-06-15T07:00:00.123Z(Eastern Standard Time (North America))", "2013-06-15T22:00:00.123Z(Eastern Standard Time (Australia))"]
+    date.tz('EST') // ["2013-06-15T07:00:00.123Z|(Eastern Standard Time (North America))", "2013-06-15T22:00:00.123Z|(Eastern Standard Time (Australia))"]
 
 
 
