@@ -20,10 +20,10 @@ test('.tz()', function() {
   equal(now.tz('AST').length, 2);
   copiedNow.setHours(now.getHours() + 3);
   copiedNow.setMinutes(min);
-  equal(now.tz('AST')[0].split('T')[1].split('(')[0], copiedNow.toISOString().split('T')[1], 'AST');
+  equal(now.tz('AST')[0].split('T')[1].split('|')[0], copiedNow.toISOString().split('T')[1], 'AST');
   copiedNow.setHours(now.getHours() - 4);
   copiedNow.setMinutes(min);
-  equal(now.tz('AST')[1].split('T')[1].split('(')[0], copiedNow.toISOString().split('T')[1], 'AST');
+  equal(now.tz('AST')[1].split('T')[1].split('|')[0], copiedNow.toISOString().split('T')[1], 'AST');
 
 
   copiedNow.setHours(now.getHours());
